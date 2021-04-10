@@ -116,7 +116,7 @@ Where `CK5xkfN9WWL3tuZTgYvJq6hmh1G0OPJf@clients` is my userID.
 
 ## User Authorization
 
-For this step you will what's called "Metadata Claims" to authorize user based on its role.
+For this step you will need what's called "Metadata Claims" to authorize user based on its role.
 More about it at [this link](https://auth0.com/docs/scopes/sample-use-cases-scopes-and-claims#add-custom-claims-to-a-token)
 
 # Quick Start
