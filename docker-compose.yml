@@ -15,5 +15,5 @@ services:
     ports:
       - 56745:56745 # This is for Debugger
       - 3000:80
-    volumes:        # Mound dist so nodemon can reload
+    volumes:        # Mount dist so nodemon can reload
       - ./dist:/usr/src/api/dist
