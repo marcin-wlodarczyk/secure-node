@@ -73,7 +73,7 @@ Expected output: `Building api ... done`
 ```
 Expected output: `[App]: Listening on port 80`
 
-That means that API listens on port 80 but inside docker container, however in docker-compose.yml you can notice port forwarding configuration ("3000:80"). So by requesting localhost:80 we'll reach our API's container.
+That means that API listens on port 80 but inside docker container, however in docker-compose.yml you can notice port forwarding configuration ("3000:80"). So by requesting localhost:3000 we'll reach our API's container.
 
 11. Let's test if API is responding:
 
