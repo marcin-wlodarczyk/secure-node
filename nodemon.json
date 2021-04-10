@@ -1,0 +1,12 @@
+{
+  "ext": "js,json",
+  "ignore": [
+    ".git",
+    "node_modules"
+  ],
+  "watch": [
+    "./dist"
+  ],
+  "delay": 1200,
+  "signal": "SIGINT"
+}

@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    entrypoint: ["npm", "run", "debug"]
+    environment:
+      NODE_ENV: development
+
+      AUTH0_JWKS_URI: https://secure-node.eu.auth0.com/.well-known/jwks.json
+      AUTH0_AUDIENCE: https://secure-node-api
+      AUTH0_ISSUER: https://secure-node.eu.auth0.com/
+
+      AUTH0_APP_METADATA_CLAIM: https://secure-node-example/claims/app_metadata
+    ports:
+      - 56745:56745 # This is for Debugger
+      - 3000:80
+    volumes:        # Mound dist so nodemon can reload
+      - ./dist:/usr/src/api/dist
